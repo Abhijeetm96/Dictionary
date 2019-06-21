@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+     <meta charset="UTF-8">
+     
+     <meta name="viewport" content="width=device-width,initial-scale=1,user-scallable=no">
+   <link href="https://fonts.googleapis.com/css?family=Aleo|Slabo+27px" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="dictionary.js"></script>
+    
+        <title>Dictionary-Book</title>
+        
+     <script src='https://code.responsivevoice.org/responsivevoice.js'></script>     
+             
+    </head>
+    <body>
+ 
+ <center><h1><i><span style='color:#00b8ee' >D</span>ictionary-<span style='color:#00b8ee' >B</span>ook</i></h1></center>
+    
+    <div class="search-box" id="ask" >
+       <div><input type="text" id="search" placeholder="Type to search" autofocus onkeyup="msg()"/></div>
+       <div id="btn" onclick="search()">
+          <div id="icon" ></div> 
+       </div>
+   </div>      
+         
+   <center>  <div id="errorMsg"></div></center>
+    <div id="mid" >
+         <div id="partOfSpeech" onclick='read()' ></div>  <br>
+     <div id="output"></div>
+    </div>
+    
+    </body>
+</html>
